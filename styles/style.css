@@ -12,9 +12,18 @@ body {
     font-family: Raleway, Arimo, Arial, Helvetica, sans-serif;
 }
 
+main {
+    padding-top: 60px;
+}
+
 header {
-    position: relative;
+    display: flex;
+    position: fixed;
     background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
 }
 
 li {
@@ -23,37 +32,31 @@ li {
 }
 
 nav {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: calc(100vw - 195px);
+    width: 50vw;
+    height: inherit;
 }
 
 ul {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
+    height: inherit;
 }
 
 nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: none;
     flex: auto;
     font-size: 0.8em;
-    border-radius: 5px;
     transition: background-color 0.2s ease, font-size 0.2s ease;
-    height: 200px;
+    height: 50%;
+    border-radius: 15px;
+    margin: 0px 2px;
     
 }
 
 nav li:hover {
-    background-color: azure;
+    background-color: black;
     font-size: 0.9em;
-}
-
-#logo {
-    display: inline-block;
 }
