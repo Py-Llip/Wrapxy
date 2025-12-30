@@ -57,6 +57,16 @@ nav li {
 }
 
 nav li:hover {
-    background-color: black;
+    background-color: rgb(205, 213, 219);
     font-size: 0.9em;
+}
+
+section#boas-vindas figure{
+    /*background: url(img.png) no-repeat center / cover fixed padding-box content-box red;*/
+    height: calc(100vh - 60px);
+    background: url(../images/fundo/palma-da-mao.png) no-repeat center top / cover fixed border-box black;
+}
+
+#boas-vindas figure h1, #boas-vindas figure h2, #boas-vindas figure p {
+    color: white;
 }
